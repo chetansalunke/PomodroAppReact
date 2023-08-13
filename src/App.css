@@ -156,7 +156,6 @@
     justify-content: right; /* Center the buttons horizontally */
     align-items: center;
   }
-  
   .card-center{
     display: flex;
     justify-content: center; /* Center the buttons horizontally */

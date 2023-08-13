@@ -14,12 +14,13 @@ function Pomodoro(props) {
         setSecond(seconds - 1);
       }, 1000);
     } else if (seconds === 0) {
-      clearInterval(interval);
-      setIsActive(false);
+        clearInterval(interval);  
+        setStop("Start");
+        setIsActive(false);
     }
 
     return () => clearInterval(interval);
-  }, [isActive, seconds]);
+  }, [isActive, seconds,stop]);
 
   const formatTime = (timeInSeconds) => {
     const minutes = Math.floor(timeInSeconds / 60);

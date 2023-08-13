@@ -61,7 +61,7 @@ function App() {
       </div>
       
       {componentA && <Pomodoro time={1500} />}
-      {componentB && <Pomodoro time={300} />}
+      {componentB && <Pomodoro time={5} />}
       {componentC && <Pomodoro time={900} />}
 
       <div className="button-container">
