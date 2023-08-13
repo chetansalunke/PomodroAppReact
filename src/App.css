@@ -1,4 +1,5 @@
 .App {
+  background-color: azure;
   text-align: center;
 }
 
@@ -14,14 +15,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
+
+  background-color: #000000;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 20px;
+  color: black;
 }
 
 .App-link {
@@ -36,3 +36,133 @@
     transform: rotate(360deg);
   }
 }
+.task-list {
+  list-style: none; /* This removes the default list bullets */
+  padding: 1px; /* Optional: Remove any default padding */
+  margin: 0; /* Optional: Remove any default margin */
+}
+
+.task-list li {
+  /* Optional: Add styling to the list items */
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 2px;
+}
+.task-list li span{
+  font-size: 12px;
+  color: red;
+}
+.time{
+  font-size:62px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.button{
+  width: 150px;
+  border-radius: 60px;
+  border-radius: 150;
+  margin-top: 15px;
+  font-size: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  background: rgba(0, 0, 0, 0.4); /* Adjust the alpha value to control transparency */
+  border: 1px;
+  margin: 5px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-container
+{
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; 
+}
+
+  .card {
+    width : 500px;
+    hight : 500px;
+    background: rgba(255, 255, 255, 0.2); /* Adjust the alpha value for transparency */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Add border for better visibility */
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Optional: Apply blur effect to background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    color: black; /* Text color for content */
+  }
+  .label{
+    color: white;
+    font-size: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .label-center{
+    display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; 
+  }
+  .label-card{
+    width : 500px;
+    hight : 500px;
+    margin-top: 5px;
+    background: rgba(255, 255, 255, 0.2); /* Adjust the alpha value for transparency */
+    border: none; /* Add border for better visibility */
+    padding: 5px;
+    border-radius: 220px;
+    backdrop-filter: blur(10px); /* Optional: Apply blur effect to background */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    color: black; /* Text color for content */
+  }
+
+  .pomo-container{
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center;
+    
+  }
+  .card-pomo{
+    width : 500px;
+    hight : 500px;
+    background: rgba(255, 255, 255, 0.2); /* Adjust the alpha value for transparency */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Add border for better visibility */
+    padding: 20px;
+    font-size: 52px;
+    border-radius: none;
+    backdrop-filter: blur(10px); /* Optional: Apply blur effect to background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    color: white; /* Text color for content */
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+  
+  }
+  .input-field{
+    font-size: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+    background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc; /* Add a subtle border for visibility */
+  outline: none;
+  padding: 5px;
+  color:white;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  }
+  .button-containert-todo{
+    display: flex;
+    padding: 20px;
+    justify-content: right; /* Center the buttons horizontally */
+    align-items: center;
+  }
+  
+  .card-center{
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center;
+  }
+  .delete-btn{
+    width: 120px;
+    margin-left:  30px;
+  }
